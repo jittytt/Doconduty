@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="./assets/css/appointment.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header id="header1" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html">
+          <h3>OXYMETRON APPOINTMENT BOOKING</h3>
+        </a></h1>
+
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+
+
+        </ul>
+      </nav>
+
+
+
+    </div>
+  </header>
+  <section id="appointment" class="appointment section-bg" style="margin-top: 76px;">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Make an Appointment</h2>
+
+      </div>
+
+      <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+        <div class="form-row">
+          <div class="col-md-4 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+              data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
+              data-msg="Please enter a valid email">
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group">
+            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4"
+              data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-4 form-group">
+            <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date"
+              data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group">
+            <input type="time" name="name" class="form-control" id="name" placeholder="time" data-rule="minlen:4"
+              data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group">
+            <select name="department" id="department" class="form-control">
+              <option value="">District</option>
+        
+              <option value="Department 3">Kottayam </option>
+              
+            </select>
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group">
+            <select name="department" id="department" class="form-control">
+              <option value="">Hospital</option>
+              <option value="Department 1">Medical college kottayam</option>
+              <option value="Department 2">St Thomas Hospital chethipuzha</option>
+              <option value="Department 3">Caritas Hospital kottayam</option>
+              <option value="Department 3">Medical centre kottayam</option>
+            </select>
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group">
+            <select name="doctor" id="doctor" class="form-control">
+              <option value="">Department</option>
+              <option value="Doctor 1">Anaesthesiology</option>
+              <option value="Doctor 2">Cardio Thoracic and Vascular Surgery</option>
+              <option value="Doctor 3">Cardiology</option>
+              <option value="Doctor 3">E N T</option>
+              <option value="Doctor 3">Nephrology</option>
+              <option value="Doctor 3">Neuro Surgery</option>
+              <option value="Doctor 3">Pediatrics</option>
+
+            </select>
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group">
+            <select name="doctor" id="doctor" class="form-control">
+              <option value="">Select Doctor</option>
+              <option value="Doctor 1">Dr.P.Savida </option>
+              <option value="Doctor 2">Dr.N.Krisnan Namboothiri</option>
+              <option value="Doctor 3">Dr.K.M.Gopinadhan</option>
+              <option value="Doctor 3">Dr.Omana S</option>
+              <option value="Doctor 3">Dr.C.Jayakumar</option>
+            </select>
+            <div class="validate"></div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+          <div class="validate"></div>
+        </div>
+        <div class="mb-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Make an Appointment</button></div>
+      </form>
+
+    </div>
+  </section>
+
+
+</body>
+
+</html>
